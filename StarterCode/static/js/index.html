@@ -65,9 +65,23 @@
                         Filter Search
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Enter a date</h5>
-                        <label for="data-input">Date: </label>
-                        <input type="text" id="data-input-search" name="text-input">
+                        <!-- <label for="data-input">Date: </label> -->
+                        <!-- <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Search
+                            </button> -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#date-search">Date</a>
+                                <a class="dropdown-item" href="#city-search">City</a>                               
+                                <a class="dropdown-item" href="#shape-search">Shape</a>
+                            </div>
+                            <h8 class="card-title">Enter a date</h8>
+                            <input type="text" id="date-search">
+                            <h8 class="card-title">Enter a city</h8>
+                            <input type="text" id="city-search">
+                            <h8 class="card-title">Enter a shape</h8>
+                            <input type="text" id="shape-search">
+                        <!-- </div>     -->
                     </div>
                     <div class="card-footer text-muted">
                         <button id="button" type="button" class="btn btn-default text-white bg-dark md-3" >Filter Table</button>
