@@ -9,59 +9,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://d3js.org/d3.v5.min.js"></script>
 <style>
-    body{ 
-        background-image: url(https://media2.s-nbcnews.com/j/newscms/2018_01/2280531/180103-ufo-illustration-mn-1015_0758c11fb1637ed3431613cef06cd246.fit-760w.jpg);
+    body {
+        background-color: rgb(18, 29, 31)
+    }
+    #header{ 
+        background-image: url(https://www.gannett-cdn.com/-mm-/b2b05a4ab25f4fca0316459e1c7404c537a89702/c=0-0-1365-768/local/-/media/2019/04/05/USATODAY/usatsports/gettyimages-501124314.jpg?);
         background-repeat: no-repeat;
-        background-size: cover}
+        background-size: cover;
+        height: 450px;
+        width: cover
+        }
     .jumbotron{
-        margin-top: 90px;
+        margin-top: 130px;
         background: none;
         background-size: cover;
         color: white;
+        height: 470px;
+        width: 1760px
     }
     h1{
         font-size: 4em;
         font-weight: bold
     }
-   #bottom-part {
-       border: 2px solid rgb(17, 14, 43);
-       border-radius: 10px;
-       margin-top: 90px;
-       margin-bottom: 15px;
-       height: 450px;
-       width: 1800px
-    }
+
+    /* #second-half{
+        background-color: rgb(18, 29, 31)
+    } */
     tbody td, thead th{
         width: 20%;
         white-space: nowrap
     }
-    .scrollable-element {
-        scrollbar-color: rgb(26, 26, 87) rgb(17, 14, 43)
-
+    ::-webkit-scrollbar {
+        width: 12px;
     }
+
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+    /* .card text-left text-white bg-transparent md-2 {
+        border: 5px;
+        border-color: aliceblue
+    }
+     */
 
 </style>
    
 </head>
 <body>
     <div class="container-fluid">
-        <div class="jumbotron">
-            <h1 align="center">UFO Sightings</h1>
-            <br>
-            <h2 align="center">The Truth is Out There</h2>
-        </div>
-    <div class="container" id="bottom-part">
-        <div class="row">
-            <div class="col-6 col-md-4".col-12 .col-md-8>
-
+        <div class="row" id="header">
+            <div class="jumbotron">
+                <h1 align="center">UFO Sightings</h1>
+                <br>
+                <h2 align="center">The Truth is Out There</h2>
             </div>
-                
-            <div class="col-12 col-md-8".col-6 .col-md-4>
-                <div style="height: 450px; overflow-y: auto" class="scrollable-element"> 
-                    <table class="table table-borderless">
+        </div>  
+    </div>     
+    <div class="container-fluid" id="second-half">
+        <div class="row">    
+            <div class="col-6 col-md-2".col-12 .col-md-10>
+                <div class="card text-left text-white bg-dark md-3" style="max-width: 20rem;">  
+                    <div class="card-header">
+                        Filter Search
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Enter a date</h5>
+                        <label for="data-input">Date: </label>
+                        <input type="text" id="data-input-search" name="text-input">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button id="button" type="button" class="btn btn-default text-white bg-dark md-3" >Filter Table</button>
+                    </div>   
+                </div>
+            </div>    
+            <div class="col-12 col-md-10".col-6 .col-md-2>
+                <div style= "height: 450px; overflow-y: auto">
+                    <table class="table table-borderless" style="color:white">
                         <thead>
                             <tr>
-                            <th scope="col">Date/Time </th>
+                            <th scope="col" >Date </th>
                             <th scope="col">City</th>
                             <th scope="col">State</th>
                             <th scope="col">Country</th>
@@ -75,8 +101,6 @@
                 </div>   
             </div>
         </div>
-    </div>
-
     </div>
     
     
