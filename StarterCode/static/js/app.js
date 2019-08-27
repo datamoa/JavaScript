@@ -19,14 +19,11 @@ button.on("click", function() {
 
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
-
-  console.log(inputValue);
+  
   
   var filteredData = data.filter(event => event.datetime === inputValue);
-  // var filteredData = data.filter(event => event.datetime === inputValue).then(test => (console.log('test')));
-  console.log(filteredData)});
-
-
+  //tbody gesen tagtai element olood (hangiin ekhnii) inner HTML  tbody dotor bgaa value g ergee hooson yumaar orluulna
+  document.getElementsByTagName('tbody')[0].innerHTML='';
 
   filteredData = filteredData.forEach(function(filteredSighting) {
     var row = tableData.append("tr");
@@ -35,5 +32,9 @@ button.on("click", function() {
      cell.text(value);
     });
   });
+});
+
+
+
 
 
