@@ -65,27 +65,33 @@
                         Filter Search
                     </div>
                     <div class="card-body">
-                        <!-- <label for="data-input">Date: </label> -->
-                        <!-- <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Search
-                            </button> -->
+                        <div class="dropdown">
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#date-search">Date</a>
                                 <a class="dropdown-item" href="#city-search">City</a>                               
                                 <a class="dropdown-item" href="#shape-search">Shape</a>
                             </div>
-                            <h8 class="card-title">Enter a date</h8>
-                            <input type="text" id="date-search">
-                            <h8 class="card-title">Enter a city</h8>
-                            <input type="text" id="city-search">
-                            <h8 class="card-title">Enter a shape</h8>
-                            <input type="text" id="shape-search">
-                        <!-- </div>     -->
+                                <h8 class="card-title">Enter a date</h8>
+                                <input type="text" id="date-search">
+                                <div class="card-footer text-muted">
+                                        <button id="button" type="button" class="btn btn-default text-white bg-dark md-3" >Filter Table</button>
+                                </div>
+                                <h8 class="card-title">Enter a city</h8>
+                                <input type="text" id="city-search">
+                                <div class="card-footer text-muted">
+                                        <button id="city-button" type="button" class="btn btn-default text-white bg-dark md-3" >Filter Table</button>
+                                </div>
+                                <h8 class="card-title">Enter a shape</h8>
+                                <input type="text" id="shape-search">
+                                <div class="card-footer text-muted">
+                                        <button id="shape-button" type="button" class="btn btn-default text-white bg-dark md-3" >Filter Table</button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                        <button id="reset-button" type="button" class="btn btn-default text-white bg-dark md-3" >Reset Table</button>
+                                </div>
+
+                        </div>    
                     </div>
-                    <div class="card-footer text-muted">
-                        <button id="button" type="button" class="btn btn-default text-white bg-dark md-3" >Filter Table</button>
-                    </div>   
                 </div>
             </div>    
             <div class="col-12 col-md-10".col-6 .col-md-2>
@@ -112,7 +118,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="static/js/data.js"></script>
-    <script src="static/js/app.js"></script>
+    <script src="static/data.js"></script>
+    <script src="static/app.js"></script>
 </body>
 </html>
